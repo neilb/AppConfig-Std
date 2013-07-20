@@ -1,0 +1,9 @@
+lib/AppConfig/Std.pm
+Makefile.PL
+README
+MANIFEST
+Changes
+t/basic.t
+t/testscript.pl
+t/getopt.t
+t/getscript.pl
