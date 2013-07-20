@@ -358,6 +358,10 @@ AppConfig::Std uses Pod::Usage, which assumes well-formed pod.
 
 =back
 
+=head1 REPOSITORY
+
+L<https://github.com/neilbowers/AppConfig-Std>
+
 =head1 AUTHOR
 
 Neil Bowers E<lt>neil@bowers.comE<gt>
