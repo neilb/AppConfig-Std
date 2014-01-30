@@ -1,5 +1,9 @@
 Revision history for perl module AppConfig::Std
 
+1.09 2014-01-30
+
+    - Added "use warnings"
+
 1.08 2013-07-20
 
     - ChangeLog renamed to Changes and reformatted as per CPAN::Changes::Spec

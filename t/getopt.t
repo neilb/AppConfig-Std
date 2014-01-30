@@ -47,53 +47,53 @@ exit 0;
 
 __DATA__
 ARGS:
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 End of getscript.pl
 ####
 ARGS: -version
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 1.0
 ####
 ARGS: -verbose
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Verbose output enabled
 End of getscript.pl
 ####
 ARGS: -debug
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Debug output enabled
 End of getscript.pl
 ####
 ARGS: -verbose -debug
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Verbose output enabled
 Debug output enabled
 End of getscript.pl
 ####
 ARGS: -foobar
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Foobar flag ON
 End of getscript.pl
 ####
 ARGS: -foobar -verbose -debug
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Verbose output enabled
 Debug output enabled
 Foobar flag ON
 End of getscript.pl
 ####
 ARGS: -color red
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 A color of red was given
 End of getscript.pl
 ####
 ARGS: -color
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Option color requires an argument
 End of getscript.pl
 ####
 ARGS: -color blue -foobar -verbose -debug
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Verbose output enabled
 Debug output enabled
 Foobar flag ON
@@ -101,17 +101,17 @@ A color of blue was given
 End of getscript.pl
 ####
 ARGS: -country
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Option country requires an argument
 End of getscript.pl
 ####
 ARGS: -country Sweden
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 The country was set to Sweden.
 End of getscript.pl
 ####
 ARGS: -help
-Start of getscript.pl [AppConfig::Std 1.08]
+Start of getscript.pl [AppConfig::Std 1.09]
 Usage:
       getscript.pl [ -version | -debug | -verbose | -doc | -help ]
                     [ -color C | -country C | -foobar ]
