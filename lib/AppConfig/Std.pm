@@ -25,6 +25,7 @@
 #=======================================================================
 
 package AppConfig::Std;
+
 use 5.006;
 use strict;
 use warnings;
@@ -34,7 +35,6 @@ use AppConfig;
 
 use vars qw(@ISA $VERSION);
 
-$VERSION = '1.09';
 @ISA     = qw(AppConfig);
 
 #=======================================================================
