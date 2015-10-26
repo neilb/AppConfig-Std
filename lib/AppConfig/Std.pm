@@ -186,15 +186,15 @@ AppConfig::Std - subclass of AppConfig that provides standard options
 =head1 SYNOPSIS
 
     use AppConfig::Std;
-    
+
     $config = AppConfig::Std->new();
-    
+
     # all AppConfig methods supported
     $config->define('foo');            # define variable foo
     $config->set('foo', 25);           # setting a variable
     $val = $config->get('foo');        # getting variable
     $val = $config->foo();             # shorthand for getting
-    
+
     $config->args(\@ARGV);             # parse command-line
     $config->file(".myconfigrc")       # read config file
 
@@ -303,21 +303,21 @@ use of the AppConfig::Std module:
     #!/usr/bin/perl -w
     use strict;
     use AppConfig::Std;
-    
+
     use vars qw( $VERSION );
     $VERSION = '1.0';
-    
+
     my $config = AppConfig::Std->new();
-    
+
     # parse command-line and handle std switches
     $config->args(\@ARGV);
-    
+
     exit 0;
-    
+
     __END__
-    
+
     =head1 NAME
-    
+
     standard pod format documentation
 
 The pod documentation is expected to have the NAME, SYNOPSIS,
@@ -326,41 +326,30 @@ for C<pod2man> for more details.
 
 =head1 SEE ALSO
 
-=over 4
-
-=item AppConfig
-
+L<AppConfig> -
 Andy Wardley's module for unifying command-line switches and
 cofiguration files into the notion of configuration variables.
 AppConfig::Std requires version 1.52+ of the module,
-which is available from CPAN:
+which is available from CPAN.
 
-    http://www.cpan.org/modules/by-module/AppConfig/
-
-=item Pod::Usage
-
+L<Pod::Usage> -
 Brad Appleton's module for extracting usage information out
 of a file's pod. This is used for the B<-doc> and B<-help> switches.
-Available from CPAN as part of the PodParser distribution:
+Available from CPAN as part of the PodParser distribution.
 
-    http://www.cpan.org/modules/by-module/Pod/
-
-=item perlpod
-
-Documentation from the perl distribution that describes
+L<perlpod|https://metacpan.org/pod/distribution/perl/pod/perlpod.pod> -
+documentation from the perl distribution that describes
 the pod format.
 
-=item pod2man
-
-Particularly the NOTES section in the documentation
+L<pod2man|https://metacpan.org/pod/distribution/podlators/scripts/pod2man> -
+particularly the NOTES section in the documentation
 which describes the sections you should include in your documentation.
 AppConfig::Std uses Pod::Usage, which assumes well-formed pod.
 
-=back
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/AppConfig-Std>
+L<https://github.com/neilb/AppConfig-Std>
 
 =head1 AUTHOR
 
