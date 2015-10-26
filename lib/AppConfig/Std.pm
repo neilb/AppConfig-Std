@@ -6,11 +6,11 @@
 # Andy Wardley's AppConfig module. It basically provides five standard
 # command-line arguments:
 #
-#	-help		display a short help statement
-#	-doc		display the full documentation (formatted pod)
-#	-version	display the version of the script
-#	-verbose	turn on verbose output
-#	-debug		turn on debugging output
+#   -help       display a short help statement
+#   -doc        display the full documentation (formatted pod)
+#   -version    display the version of the script
+#   -verbose    turn on verbose output
+#   -debug      turn on debugging output
 #
 # The -help and -doc functionality is provided by Brad Appleton's
 # Pod::Usage module. I wrote this module because I was cutting &
@@ -42,9 +42,9 @@ use vars qw(@ISA $VERSION);
 # new() - constructor
 #
 # The constructor:
-#	> invokes the AppConfig constructor with standard config
-#	> blesses the instance into this package
-#	> defines the -help, -doc, -version, and -debug options
+#   > invokes the AppConfig constructor with standard config
+#   > blesses the instance into this package
+#   > defines the -help, -doc, -version, and -debug options
 #       > configures with any additional options passed to constructor
 #
 #=======================================================================
@@ -97,9 +97,8 @@ sub args
     # If the command-line was successfully parsed (returned TRUE),
     # then check for the standard command-line switches.
     #-------------------------------------------------------------------
-    if ($result)
-    {
-	$self->_handle_std_opts();
+    if ($result) {
+        $self->_handle_std_opts();
     }
 
     return $result;
@@ -131,9 +130,8 @@ sub getopt
     # If the command-line was successfully parsed (returned TRUE),
     # then check for the standard command-line switches.
     #-------------------------------------------------------------------
-    if ($result)
-    {
-	$self->_handle_std_opts();
+    if ($result) {
+        $self->_handle_std_opts();
     }
 
     return $result;

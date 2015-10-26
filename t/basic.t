@@ -12,34 +12,31 @@ my $output;
 
 while (<DATA>)
 {
-    if (/^ARGS:(.*)$/)
-    {
-	$args = $1;
+    if (/^ARGS:(.*)$/) {
+        $args = $1;
     }
-    elsif (/^####$/)
-    {
-	push(@expected, [$args, $e]);
-	$args = '';
-	$e = '';
+    elsif (/^####$/) {
+        push(@expected, [$args, $e]);
+        $args = '';
+        $e = '';
     }
-    else
-    {
-	$e .= $_;
+    else {
+        $e .= $_;
     }
 }
 
 print "1..", int(@expected), "\n";
 
 
-for ($i = 1; $i <= int(@expected); ++$i)
-{
+for ($i = 1; $i <= int(@expected); ++$i) {
     $args = $expected[$i-1]->[0];
     $output = `$^X -Iblib/lib t/testscript.pl $args 2>&1`;
     if ($output eq $expected[$i-1]->[1]) {
-	print "ok $i\n";
-    } else {
-print STDERR "OUTPUT:\n$output\nEXPECTED:\n", $expected[$i-1]->[1], "\n";
-	print "not ok $i\n";
+        print "ok $i\n";
+    }
+    else {
+        print STDERR "OUTPUT:\n$output\nEXPECTED:\n", $expected[$i-1]->[1], "\n";
+        print "not ok $i\n";
     }
 }
 

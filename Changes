@@ -2,6 +2,7 @@ Revision history for perl module AppConfig::Std
 
 1.10 2015-10-26 NEILB
     - Switched to Dist::Zilla
+    - Got rid of tab characters
 
 1.09 2014-01-30
     - Added "use warnings"
